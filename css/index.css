@@ -1,0 +1,19 @@
+.head_title{
+    text-align: center;
+}
+.grid_rooms{
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    width: fit-content;
+}
+.grid_rooms a{
+    margin: auto;
+}
+.room_single{
+    background: #efefef;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 10px;
+}

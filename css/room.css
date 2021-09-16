@@ -1,0 +1,57 @@
+body{
+    padding: 10px;
+}
+h1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+/*message box and related*/
+.write{
+    position: absolute;
+    width: 100%;
+    right: 0;
+    padding: 10px;
+    bottom: 0;
+}
+.messages{
+    height: 500px;
+    padding: 6px;
+    width: 100%;
+    border: 1px solid #ccc;
+    font: 16px/26px Georgia, Garamond, Serif;
+    overflow: auto;
+}
+.username{
+    color: rgb(0, 0, 0);
+}
+.single_message{
+    background: rgb(233, 233, 233);
+    padding: 10px;
+    width: fit-content;
+    max-width: 100%;
+    overflow-wrap: break-word;
+    margin: 0;
+    border-radius: 6px;
+}
+.message_box{
+    width: 100%;
+    border: 1px solid black;
+}
+.submit{
+    width: 100%;
+    background: black;
+    color: white;
+    border: none;
+}
+.error_message{
+    text-align: center;
+    color: red;
+    font-family: cursive;
+}
+@media only screen and (min-width:500px) {
+    .write{
+        width: 50%!important;
+        padding: 10px;
+    }
+}
