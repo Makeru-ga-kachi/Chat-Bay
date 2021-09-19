@@ -32,7 +32,7 @@
     //sends a message to a single room
     function sendMsg($room,$msg,$sender){
         require('connection/conn.php'); 
-        $stmt = $conn->prepare("INSERT INTO `chat messages`(`room_id`, `message`, `sender`) VALUES (:room, :msg, :sender)"); //query
+        $stmt = $conn->prepare("INSERT INTO `chat_messages`(`room_id`, `message`, `sender`) VALUES (:room, :msg, :sender)"); //query
         $stmt->bindParam(':room', $room);
         $stmt->bindParam(':msg', $msg);
         $stmt->bindParam(':sender', $sender);
